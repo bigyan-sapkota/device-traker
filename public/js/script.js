@@ -48,9 +48,3 @@ socket.on("user-disconnected", (id) => {
     delete markers[id];
   }
 });
-
-// When receiving location data via the socket, extract id, latitude, and longitude, and center the map on the new coordinates
-
-// If a marker for the id exists, update its position
-
-// Otherwise, create a new marker at the given coordinates and add it to the map. When a user disconnects, remove their marker fron the map and delete it from markers.
